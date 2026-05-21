@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f6f1e7;
+  color: #264127;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+/* =========================================
+   FONT UPGRADE
+========================================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================
+   WORKSHOP IMAGES
+========================================= */
+
+.workshop-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  margin-bottom: 25px;
+}
+
+
+.workshop-card {
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+
+.workshop-card:hover {
+  transform: translateY(-10px);
+}
+
+
+.workshop-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   MORE BALANCED FRONT PAGE
+========================================= */
+
+.bookstore-section,
+.workshop-section,
+.icecream-section {
+  position: relative;
+}
+
+
+.bookstore-section::before,
+.workshop-section::before,
+.icecream-section::before {
+
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #d6b06f,
+      #e8d8b5,
+      #7a9d54,
+      #d6b06f
+    );
+}
+
+
+/* =========================================
+   CREAMIER NAVBAR
+========================================= */
+
+header {
+  background: #fffef9;
+  border-bottom: 1px solid #ecdcbf;
+  backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   SECTION BALANCE
+========================================= */
+
+.section-heading h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+
+.section-heading span {
+  font-size: 0.95rem;
+}
+
+
+.hero p,
+.section-heading p,
+.brand-text,
+.book-subtitle,
+.workshop-card p {
+  font-size: 1.05rem;
+}
+
+
+/* =========================================
+   SOFTER EARTHY CARDS
+========================================= */
+
+.book-card,
+.workshop-card,
+.testimonial-box {
+
+  background: rgba(255,255,255,0.82);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(223, 208, 179, 0.5);
+
+  box-shadow:
+    0 8px 30px rgba(67, 56, 32, 0.08);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+  background: #f9f5ee;
+  border-bottom: 2px solid #d5b16f;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 5%;
+  flex-wrap: wrap;
+}
+
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo-img {
+  width: 95px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #264127;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+
+.nav-links a:hover {
+  color: #c48a2a;
+}
+
+
+.vendor-btn {
+  background: #2e5d34;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+
+.vendor-btn:hover {
+  background: #c48a2a;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  min-height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 60px 20px;
+
+  background:
+    linear-gradient(
+      rgba(246,241,231,0.88),
+      rgba(246,241,231,0.88)
+    ),
+    url('images/sm.Logo.png')
+    center/contain no-repeat;
+}
+
+
+.hero-content {
+  max-width: 850px;
+}
+
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;
+  color: #214122;
+  margin-bottom: 20px;
+}
+
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #355b37;
+}
+
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.main-btn,
+.secondary-btn {
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 40px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+
+.main-btn {
+  background: #2f6036;
+  color: white;
+}
+
+
+.main-btn:hover {
+  background: #c48a2a;
+}
+
+
+.secondary-btn {
+  border: 2px solid #2f6036;
+  color: #2f6036;
+}
+
+
+.secondary-btn:hover {
+  background: #2f6036;
+  color: white;
+}
+
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome-section {
+  padding: 90px 0;
+  text-align: center;
+}
+
+
+.welcome-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #214122;
+}
+
+
+.welcome-section p {
+  max-width: 850px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+}
+/* =========================================
+   SOFTER NAVBAR COLOR
+========================================= */
+
+header {
+  background: #fffdf8;
+  border-bottom: 1px solid #e5d5b5;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading span {
+  color: #b78633;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  color: #214122;
+  margin: 15px 0;
+}
+
+.section-heading p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+
+/* =========================================
+   BOOKSTORE SECTION
+========================================= */
+
+.bookstore-section {
+  background: #fdf8ef;
+  padding: 100px 0;
+}
+
+.coming-soon {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #2e5d34;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+}
+
+.section-intro {
+  margin-top: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.book-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 1px solid #efe4d0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+}
+
+.book-category {
+  color: #b78633;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.book-card h3 {
+  margin: 15px 0;
+  color: #214122;
+  font-size: 1.7rem;
+}
+
+.book-subtitle {
+  margin-bottom: 20px;
+}
+
+.book-price {
+  color: #2e5d34;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   SMALLER 3-ACROSS WORKSHOP CARDS
+========================================= */
+
+.workshop-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+
+  align-items: start;
+
+  margin-top: 60px;
+}
+
+
+/* =========================================
+   WORKSHOP CARD
+========================================= */
+
+.workshop-card {
+
+  background: rgba(255,255,255,0.86);
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(223, 208, 179, 0.45);
+
+  box-shadow:
+    0 8px 24px rgba(67, 56, 32, 0.08);
+
+  transition: 0.35s ease;
+
+  position: relative;
+}
+
+
+.workshop-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 14px 32px rgba(67, 56, 32, 0.12);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.workshop-image {
+
+  width: 100%;
+
+  height: 190px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.workshop-card h3 {
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 1.5rem;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: #214122;
+
+  padding:
+    24px 24px 10px;
+}
+
+
+.workshop-meta {
+
+  padding: 0 24px;
+
+  color: #b78633;
+
+  font-size: 0.92rem;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+}
+
+
+.spots-left {
+
+  display: inline-block;
+
+  margin:
+    18px 24px;
+
+  background: #edf5ed;
+
+  color: #2e5d34;
+
+  padding: 7px 14px;
+
+  border-radius: 30px;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+}
+
+
+.workshop-card p {
+
+  padding:
+    0 24px;
+
+  font-size: 0.97rem;
+
+  line-height: 1.7;
+
+  color: #4b5f4c;
+}
+
+
+.workshop-card ul {
+
+  padding:
+    20px 24px 30px 44px;
+}
+
+
+.workshop-card li {
+
+  margin-bottom: 10px;
+
+  color: #355237;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================
+   PRICE TAG
+========================================= */
+
+.price-tag {
+
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  background: rgba(33, 65, 34, 0.92);
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .workshop-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .workshop-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-card h3 {
+
+    font-size: 1.35rem;
+  }
+}
+/* =========================================
+   BRAND SECTION
+========================================= */
+
+.brand-section {
+  background: #fcfaf5;
+  padding: 100px 0;
+}
+
+.brand-text {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.features-grid {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-box {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid #eee3d1;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   ICE CREAM SECTION
+========================================= */
+
+.icecream-section {
+  background: #f7f3ea;
+  padding: 100px 0;
+}
+
+.testimonial-box {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border-left: 6px solid #b78633;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.testimonial-box p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-box span {
+  color: #2e5d34;
+  font-weight: 700;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #214122;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+}

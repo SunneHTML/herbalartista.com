@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendor Sign Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container flex">
+    <div class="logo"> <img src="images/logo.png" alt="Herbal Artista West Coast" width="50" height="auto"></div>
+    <nav>
+   <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="vendor.html">Vendor Signup</a>
+      <a href="reservebooth.html">Reserve Booth</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>March 15, 2026   8AM  to 4PM</h1>
+    <p>Back2Nature Wellness Market - Bay Area Makersfarm  
+    Main Street &amp; Singleton Ave   Alameda, CA</p>
+    <a href="reservebooth.html" class="btn">Reserve a Booth</a>
+  </div>
+</section>
+<section>
+
+<form action="submit.php" method="post">
+
+<label>Business Name:</label>
+<input type="text" name="business" required>
+
+<label>Contact Name:</label>
+<input type="text" name="contact" required>
+
+<label>Email:</label>
+<input type="email" name="email" required>
+
+<label>Phone:</label>
+<input type="text" name="phone" required>
+
+<label>Select Event Date:</label>
+<select name="event_date" required>
+    <option value="">-- Choose Date --</option>
+    <option>April 19, 2026</option>
+    <option>May 17, 2026</option>
+    <option>June 21, 2026</option>
+    <option>July 19, 2026</option>
+    <option>August 16, 2026</option>
+    <option>September 20, 2026</option>
+    <option>October 18, 2026</option>
+    <option>November 15, 2026</option>
+    <option>December 20, 2026</option>
+</select>
+
+<label>Vendor Category:</label>
+<select name="category" required>
+    <option value="">-- Select Category --</option>
+    <option>Crafted Personal Care</option>
+    <option>Body Care Products</option>
+    <option>Nutrition</option>
+    <option>Functional Foods & Beverages</option>
+    <option>MindBody Therapies</option>
+    <option>Fitness Lifestyle</option>
+    <option>Sustainability & Eco Fashions</option>
+</select>
+
+<label>Tell Us About Your Products:</label>
+<textarea name="description" rows="5" required></textarea>
+
+<label>
+<input type="checkbox" required>
+I understand this is a curated market and submission does not guarantee approval.
+</label>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</section>
+
+</body>
+</html>
